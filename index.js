@@ -64,7 +64,7 @@ function check() {
             parray = [];
             array = [];
             disable = true;
-            button_start.disable = false;
+            button_start.disabled = false;
             score_text.innerText = "-";
         } else if (index + 1 == len) {
             score++;
@@ -76,7 +76,7 @@ function check() {
 }
 
 function run() {
-    button_start.disable = true;
+    button_start.disabled = true;
     array.push(tiles[randint(0, 3)]);
     clonedarray = [...array];
     parray = [];
